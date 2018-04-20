@@ -32,9 +32,24 @@ body {
     min-height: 740px;
 
     background: #00000f;
-    color: rgb(102, 102, 102);
+    color: rgb(255,255,255);
 }
 
+.group-name {
+    margin-left: 100px;
+}
+.lev0 {
+    font-size: 180px;
+    text-align: center;
+}
+.lev1 {
+    font-size: 100px;
+    text-align: center;
+}
+.lev2 {
+    font-size: 80px;
+    text-align: center;
+}
 .step {
     position: relative;
     width: 700px;
@@ -46,7 +61,7 @@ body {
 
     line-height: 1.5;
 
-    background-color: white;
+    background-color: transparent;
     border-radius: 10px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, .1);
 
@@ -70,6 +85,12 @@ body {
     box-shadow: none;
     pointer-events: none;
     display: none;
+}
+.overview-tip {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    pointer-events: none;
 }
 .overview.active {
     display: block;
@@ -248,10 +269,13 @@ body.impress-mouse-timeout {
 
 #overview2 {
     font-size: 20pt;
-    padding-left: 200px;
-    text-align: right;
+    text-align: center;
 }
 
+#overview3 {
+    padding-left: 200px;
+    text-align: center;
+}
 
 /*
     And as the last thing there is a workaround for quite strange bug.
